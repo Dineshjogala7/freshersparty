@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshers 2K24</title>
+    <style>
+        nav {
+            background-color: rgb(138, 45, 5);
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            position: fixed;
+            /* Fix the navbar */
+            top: 0;
+            /* Position at the top */
+            width: 100%;
+            /* Ensure it takes the full width */
+            z-index: 1000;
+            /* Ensure it appears above other elements */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-right: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            padding-top: 80px;
+            /* Add padding to prevent content from hiding behind the navbar */
+        }
+
+        .home {
+            width: 100%;
+            height: 860px;
+        }
+
+        .home img {
+            width: 100%;
+            height: 860px;
+            display: block;
+        }
+
+        .Events .event_list {
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .Events .event_list .items {
+            width: 30%;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 2px solid black;
+            border-radius: 14px;
+            box-shadow: 14px 14px rgb(233, 139, 7);
+            margin-bottom: 2rem;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Center content */
+        }
+
+        nav a:hover {
+            color: rgb(249, 247, 247);
+            background-color: black;
+            border-radius: 8px;
+            box-shadow: 0px 0px 4px 4px rgb(135, 203, 222);
+            /* Change the text color to black on hover */
+        }
+
+        .Events .event_list :hover {
+            box-shadow: 0px 0px 14px 10px purple;
+        }
+
+        .Contact .contact_list {
+            display: flex;
+            /* Align items horizontally */
+            flex-direction: row;
+            justify-content: center;
+            /* Center items */
+            gap: 2rem;
+            /* Space between items */
+        }
+
+        .Contact p {
+            margin-left: 25px;
+            color: rgb(6, 4, 1);
+        }
+
+        .Contact .contact_item {
+            border: 4px solid black;
+            /* Border for the item */
+            border-radius: 14px;
+            /* Rounded corners */
+            padding: 1rem;
+            /* Padding inside the box */
+            text-align: center;
+            /* Center text */
+            background-color: #f9f9f9;
+            /* Light background for visibility */
+            width: auto;
+            /* Adjust width based on content */
+            max-width: 300px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            box-shadow: 7px 7px rgb(11, 14, 0);
+            /* Optional: Set a max width for larger screens */
+        }
+
+        .Contact .contact_item:hover {
+            box-shadow: 0px 0px 8px 8px rgb(79, 229, 239);
+        }
+
+        .Contact .contact_item img {
+            width: 50px;
+            /* Set a fixed width for the images */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        .Contact {
+            background-color: rgb(7, 90, 14);
+        }
+
+        .Contact h2 {
+            padding-top: 25px;
+            text-align: center;
+            /* Center the heading */
+        }
+
+        .Events .event_list img {
+            width: 100%;
+            height: auto;
+            /* Set height to auto to keep the aspect ratio */
+            object-fit: cover;
+            /* Maintain aspect ratio */
+            display: block;
+            border-radius: 5px;
+        }
+
+        .Events .event_list h4,
+        .Events .event_list p,
+        .Events .event_list li {
+            margin: 0.5rem 0;
+            padding: 0 1rem;
+            /* Add some padding */
+        }
+
+        /* Media Query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .Events .event_list .items {
+                width: 48%;
+                /* For smaller screens, show two items per row */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .Events .event_list .items {
+                width: 100%;
+                /* For mobile screens, show one item per row */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a
+                    href="https://drive.google.com/uc?export=download&id=1X-Be_7yKFrq0Pi2DpHGiXZimQ2c-_cdn">Invitation</a>
+            </li>
+            <li><a href="#Events">Events</a></li>
+            <li><a href="https://drive.google.com/uc?export=download&id=1tO5jOpUONcw8Y-B1sAqt7eE1UzesqclW">Brochure</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="home" id="Home">
+        <img src="h1.png" alt="Home Image">
+    </section>
+    <section class="Events" id="Events">
+        <div class="event_list">
+            <div class="items">
+                <img src="innojam.jpg" alt="INNO-JAM">
+                <h3>INNO-JAM</h3>
+                <p>Event Organiser: Naga Chaitanya</p>
+                <li>Contact: 7842486290</li>
+            </div>
+            <div class="items">
+                <img src="grid.jpg" alt="GENIUS-GRID">
+                <h3>GENIUS-GRID</h3>
+                <p>Event Organiser: Harsha</p>
+                <li>Contact: 77805513720</li>
+            </div>
+            <div class="items">
+                <img src="moviemaniac.jpg" alt="Movie-Maniac">
+                <h3>Movie-Maniac</h3>
+                <p>Event Organiser: Rishitha</p>
+                <li>Contact: 6281069419</li>
+            </div>
+            <div class="items">
+                <img src="memes.jpg" alt="Memes-Mayagalam">
+                <h3>Memes-Mayagalam</h3>
+                <p>Event Organiser: Tanmayi</p>
+                <li>Contact: 7671886209</li>
+            </div>
+            <div class="items">
+                <img src="IMG-20240929-WA0009.jpg" alt="Treasure-Hunt">
+                <h3>Treasure-Hunt</h3>
+                <p>Event Organiser: Kedernath</p>
+                <li>Contact: 9390061610</li>
+            </div>
+        </div>
+    </section>
+    <section class="Brochure" id="Brochure">
+    </section>
+    <section class="Contact" id="Contact">
+        <h2>Contact Us</h2>
+        <div class="contact_list">
+            <div class="contact_item">
+                <a href="https://www.instagram.com/sahe.visuals/">
+                    <img src="instalogo.jpeg" alt="Instagram">
+                </a>
+                <p>Instagram:sahe.visuvals</p>
+            </div>
+            <div class="contact_item">
+                <img src="whtsapp.jpeg" alt="WhatsApp">
+                <p>WhatsApp :+91 99490 52858</p>
+                <p>WhatsApp :+91 9550022131</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
